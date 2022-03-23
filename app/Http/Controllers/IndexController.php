@@ -12,4 +12,10 @@ class IndexController extends Controller
         $todo = ToDo::all();
         return view('index', ['todo'=>$todo]);
     }
+
+    public function add()
+    {
+        $todo = new ToDo();
+        return view('index', ['todo'=>$todo]);
+    }
 }

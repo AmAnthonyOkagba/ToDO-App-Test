@@ -28,7 +28,8 @@
 
                       <h4 class="text-center my-3 pb-3">To Do App</h4>
 
-                      <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                      <form action="#" method="POST" class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                        @csrf
                         <div class="col-12">
                           <div class="form-outline">
                             <input type="text" id="form1" class="form-control" />
@@ -41,7 +42,7 @@
                         </div>
 
                         <div class="col-12">
-                          <button type="submit" class="btn btn-warning">Get tasks</button>
+                          <button type="button" class="btn btn-warning">Get tasks</button>
                         </div>
                       </form>
 
@@ -66,24 +67,6 @@
                                     </td>
                                 </tr>
                             @endforeach
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Renew car insurance</td>
-                            <td>In progress</td>
-                            <td>
-                              <button type="submit" class="btn btn-danger">Delete</button>
-                              <button type="submit" class="btn btn-success ms-1">Finished</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Sign up for online course</td>
-                            <td>In progress</td>
-                            <td>
-                              <button type="submit" class="btn btn-danger">Delete</button>
-                              <button type="submit" class="btn btn-success ms-1">Finished</button>
-                            </td>
-                          </tr>
                         </tbody>
                       </table>
 
