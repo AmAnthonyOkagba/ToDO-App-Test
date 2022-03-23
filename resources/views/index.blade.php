@@ -58,7 +58,7 @@
                         <tbody>
                             @foreach ($todo as $todos)
                                 <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row">{{ $todos->id }}</th>
                                     <td>{{ $todos->name }}</td>
                                     <td>{{ $todos->status }}</td>
                                     <td>
