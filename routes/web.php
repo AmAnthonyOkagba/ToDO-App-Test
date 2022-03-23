@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
-Route::get('/add', [App\Http\Controllers\IndexController::class, 'add']);
+Route::post('/add', [App\Http\Controllers\IndexController::class, 'add']);
 
 Auth::routes();
 

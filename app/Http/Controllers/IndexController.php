@@ -13,9 +13,11 @@ class IndexController extends Controller
         return view('index', ['todo'=>$todo]);
     }
 
-    public function add()
+    public function add(Request $request)
     {
         $todo = new ToDo();
-        return view('index', ['todo'=>$todo]);
+        $todo->name = $request->input('name');
+        $todo->save();
+        return redirect('/');
     }
 }

@@ -28,11 +28,11 @@
 
                       <h4 class="text-center my-3 pb-3">To Do App</h4>
 
-                      <form action="#" method="POST" class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                      <form action="{{ url('/add') }}" method="POST" class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
                         @csrf
                         <div class="col-12">
                           <div class="form-outline">
-                            <input type="text" id="form1" class="form-control" />
+                            <input type="text" name="name" id="form1" class="form-control" />
                             <label class="form-label" for="form1">Enter a task here</label>
                           </div>
                         </div>
